@@ -11,8 +11,9 @@ macOS 10.15+
 
 # Installaion
 
-
+```
 File ➜ Swift Packages ➜ Add Package Dependancy..
+```
 
 Swift Package Manager
 Add CustomLoadingButton as dependency in your Package.swift
