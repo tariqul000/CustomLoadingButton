@@ -20,12 +20,14 @@ Add CustomLoadingButton as dependency in your Package.swift
 
 import CustomLoadingButton
 
+```
 let package = Package(
     name: "YourPackage",
     dependencies: [
         .Package(url: "https://github.com/tariqul000/CustomLoadingButton.git", majorVersion: 0),
     ]
 )
+```
 
 
 Add style with progress persentage 
