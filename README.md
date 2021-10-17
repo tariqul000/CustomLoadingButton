@@ -1,10 +1,6 @@
 # CustomLoadingButton
 
 Simple Custom Loading Progress Button for SwiftUI
-
-
-
-This version requires Xcode 10.2 and Swift 5.0.
 Version 1.0.0
 
 # This version requires 
