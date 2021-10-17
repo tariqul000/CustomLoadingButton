@@ -31,6 +31,8 @@ let package = Package(
 
 
 Add style with progress persentage 
+
+```
 var style = LoadingButtonStyle(width: 312,
                                 height: 54,
                                 cornerRadius: 27,
@@ -39,18 +41,21 @@ var style = LoadingButtonStyle(width: 312,
                                 strokeWidth: 5,
                                 strokeColor: .orange,
                                 progressType: ProgressType.persentageProgress)
-                                
+```                           
                                 
 
 Button calling 
-            LoadingButton(action: {
+
+```
+LoadingButton(action: {
                // Your Action here
-            }, isLoading: $isLoading,progress: $progressValue, style: style) {
-                     HStack{
-                     Image(systemName: "clear.fill").foregroundColor(Color.white)
-                     Text("LoadingButton").foregroundColor(Color.white)
-                     }
-             }
+     }, isLoading: $isLoading,progress: $progressValue, style: style) {
+     HStack{
+     Image(systemName: "clear.fill").foregroundColor(Color.white)
+     Text("LoadingButton").foregroundColor(Color.white)
+    }
+}
+```
 
 # Contribute
 I would love you for the contribution to CustomLoadingButton, check the LICENSE file for more info.
