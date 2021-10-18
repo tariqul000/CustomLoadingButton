@@ -32,7 +32,7 @@ public struct CustomLoadingButton<Content: View>: View{
             if !isLoading {
                 action()
             }
-            isLoading = true
+           // isLoading = true
         }) {
             ZStack {
                 Rectangle()
@@ -45,6 +45,7 @@ public struct CustomLoadingButton<Content: View>: View{
                     if style.progresType == ProgressType.persentageProgress {
                         CirclePersntageProgressBar(style: style, progress: $progress)
                     }
+                    
                     if style.progresType == ProgressType.circleProgress{
                         CircleLoadingBar(style: style)
                     }
