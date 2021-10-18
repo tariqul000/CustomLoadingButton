@@ -25,7 +25,7 @@ import CustomLoadingButton
 let package = Package(
     name: "YourPackage",
     dependencies: [
-        .Package(url: "https://github.com/tariqul000/CustomLoadingButton.git", majorVersion: 0),
+        .Package(url: "https://github.com/tariqul000/CustomLoadingButton.git", majorVersion: 1.0.0),
     ]
 )
 ```
