@@ -12,7 +12,7 @@ public struct LoadingButtonStyle {
                 strokeWidth: CGFloat? = nil,
                 strokeColor: Color? = nil,
                 progressType: ProgressType? = nil) {
-        self.width = width ?? 312
+        self.width = width ?? .infinity
         self.height = height ?? 54
         self.cornerRadius = cornerRadius ?? 0
         self.backgroundColor = backgroundColor ?? Color.blue
@@ -26,7 +26,7 @@ public struct LoadingButtonStyle {
     /// progress type
     var progresType: ProgressType =  ProgressType.circleProgress
     /// Width of button
-    public var width: CGFloat = 312
+    public var width: CGFloat = .infinity
     /// Height of button
     public var height: CGFloat = 54
     /// Corner radius of button
