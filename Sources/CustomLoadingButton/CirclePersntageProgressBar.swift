@@ -23,9 +23,9 @@ struct CirclePersntageProgressBar: View {
                     .stroke(style: StrokeStyle(lineWidth: style.strokeWidth, lineCap: .round, lineJoin: .bevel))
                     .foregroundColor(.red)
                     .rotationEffect(Angle(degrees: isLoading ? 360 : 0))
-                    .animation(Animation.default.repeatForever(autoreverses: false))
+                    .animation(Animation.default.repeatForever(autoreverses: false), value: self.isLoading)
             
-                Text(String(format: "%.0f %%", min(Double(self.progress), 1.0)*100.0))
+                Text(String(format: "%.0f %%", min(Double(self.progress), 1.0)))
                     .font(.system(size: 12))
                     .bold()
 
